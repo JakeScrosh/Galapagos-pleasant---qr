@@ -83,6 +83,61 @@
   audio{width:100%}
 
   footer{margin-top:20px;font-size:12px;color:var(--muted);text-align:center}
+
+
+/* ---- Ambient control ---- */
+.ambient-card{
+  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+  margin-top:8px; padding:10px 12px; border-radius:12px;
+  background:color-mix(in oklab, var(--accent) 8%, transparent);
+  border:1px solid var(--border);
+}
+.ambient-toggle{
+  display:flex; align-items:center; gap:10px;
+  border:none; border-radius:999px; padding:8px 12px;
+  background:var(--accent); color:#fff; font-weight:700; cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,.15); transition:filter .15s, background .2s;
+}
+.ambient-toggle:hover{ filter:brightness(.95); }
+.ambient-toggle .icon{ font-size:18px }
+.ambient-toggle .eq{ display:inline-flex; gap:3px; margin-left:2px }
+.ambient-toggle .eq i{
+  width:3px; height:6px; background:#fff; border-radius:2px; opacity:.8;
+  animation:none;
+}
+.ambient-toggle.playing{ background:var(--accent-strong); }
+.ambient-toggle.playing .eq i{
+  animation:ambientBars 900ms infinite ease-in-out;
+}
+.ambient-toggle.playing .eq i:nth-child(2){ animation-delay: .15s; }
+.ambient-toggle.playing .eq i:nth-child(3){ animation-delay: .30s; }
+
+@keyframes ambientBars{
+  0%,100%{ height:6px; opacity:.7 }
+  50%{ height:14px; opacity:1 }
+}
+
+#ambient-volume{
+  appearance:none; width:160px; height:6px; border-radius:999px;
+  background:linear-gradient(90deg, var(--accent) 0 var(--vol,18%), #cfd8d6 var(--vol,18%) 100%);
+  outline:none; border:1px solid var(--border);
+}
+#ambient-volume::-webkit-slider-thumb{
+  appearance:none; width:14px; height:14px; border-radius:50%;
+  background:var(--accent-strong); border:none; box-shadow:0 0 0 2px #fff;
+}
+#ambient-volume::-moz-range-thumb{
+  width:14px; height:14px; border-radius:50%;
+  background:var(--accent-strong); border:none;
+}
+
+/* mejor contraste en oscuro */
+html[data-theme="dark"] #ambient-volume{
+  background:linear-gradient(90deg, var(--accent) 0 var(--vol,18%), #2a3432 var(--vol,18%) 100%);
+}
+    
+    
+    
 </style>
   
 </head>
@@ -173,18 +228,39 @@
 </div>
 
     <div class="section">
+  <h2>
+    <span data-lang="es">🎶 Música ambiental</span>
+    <span data-lang="en" style="display:none">🎶 Ambient music</span>
+    <span data-lang="de" style="display:none">🎶 Ambient-Musik</span>
+  </h2>
 
-      
-     <h2>
-  <span data-lang="es">🎶 Música ambiental</span>
-  <span data-lang="en" style="display:none">🎶 Ambient music</span>
-  <span data-lang="de" style="display:none">🎶 Ambient-Musik</span>
-</h2>
-      <audio controls loop>
-        <source src="Ambient music.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio HTML5.
-      </audio>
-    </div>
+  <!-- Control minimal de sonido ambiental -->
+  <div class="ambient-card" role="group" aria-label="Ambient music">
+    <button id="ambient-toggle" class="ambient-toggle" aria-pressed="false">
+      <span class="icon">🌊</span>
+      <span class="label">
+        <span data-lang="es">Sonido ambiental</span>
+        <span data-lang="en" style="display:none">Ambient sound</span>
+        <span data-lang="de" style="display:none">Ambient-Sound</span>
+      </span>
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="state">
+        <span data-lang="es">Activar</span>
+        <span data-lang="en" style="display:none">Enable</span>
+        <span data-lang="de" style="display:none">Aktivieren</span>
+      </span>
+    </button>
+
+    <!-- Volumen discreto -->
+    <input id="ambient-volume" type="range" min="0" max="1" step="0.01" value="0.18" aria-label="Volume">
+  </div>
+
+  <!-- Audio oculto (sin controles nativos) -->
+  <audio id="bgm" preload="auto" loop playsinline muted>
+    <source src="Ambient music.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+</div>
 
     <footer>
       © 2025 Galápagos Guide — Escanea el QR para abrir esta página
@@ -226,6 +302,9 @@
     // Título de la pestaña (browser tab)
     document.title = pageTitles[lang] || pageTitles.es;
 
+     // actualizar texto del botón de sonido según idioma
+    window.updateAmbientLang?.(lang);
+
     try { localStorage.setItem('lang', lang); } catch(e) {}
   }
 
@@ -265,5 +344,107 @@
     });
   } catch(e) {}
 </script>
+
+  <script>
+(function(){
+  const audio = document.getElementById('bgm');
+  const btn   = document.getElementById('ambient-toggle');
+  const volEl = document.getElementById('ambient-volume');
+  if(!audio || !btn || !volEl) return;
+
+  // API para que setLang actualice el texto del botón
+  window.updateAmbientLang = function(lang){
+    const mode = btn.classList.contains('playing') ? 'on' : 'off';
+    setStateLabel(mode, lang);
+  };
+
+  // Estado inicial
+  const savedVol = parseFloat(localStorage.getItem('ambientVol') || '0.18');
+  const savedOn  = localStorage.getItem('ambientOn'); // '1'|'0'|null
+  volEl.value = isFinite(savedVol) ? savedVol : 0.18;
+  audio.volume = 0.0; // para fade-in
+  setVolTrack();
+
+  // Autoplay silencioso (permitido); si el user lo dejó activo, arrancamos con sonido
+  document.addEventListener('DOMContentLoaded', async () => {
+    try { await audio.play(); } catch(_) {}
+    if(savedOn === '1'){ enableSound(true); }
+    // Sin esto, al cargar muestra el texto correcto segun idioma guardado
+    window.updateAmbientLang?.(localStorage.getItem('lang') || 'es');
+  });
+
+  // Toggle
+  btn.addEventListener('click', () => {
+    if(btn.classList.contains('playing')){ disableSound(); }
+    else { enableSound(); }
+  });
+
+  // Volumen
+  volEl.addEventListener('input', () => {
+    const v = clamp(parseFloat(volEl.value), 0, 1);
+    localStorage.setItem('ambientVol', String(v));
+    setVolTrack();
+    if(btn.classList.contains('playing')) audio.volume = v;
+  });
+
+  // Primer gesto global: si el user no lo había desactivado, activamos
+  const opts = { once:true, passive:true };
+  function firstGesture(){ if(savedOn !== '0') enableSound(); }
+  window.addEventListener('click', firstGesture, opts);
+  window.addEventListener('keydown', firstGesture, opts);
+  window.addEventListener('touchstart', firstGesture, opts);
+
+  function enableSound(skipFade=false){
+    audio.muted = false;
+    audio.play().catch(()=>{});
+    const target = clamp(parseFloat(volEl.value), 0, 1);
+    if(skipFade){ audio.volume = target; } else { fadeTo(target, 900); }
+    btn.classList.add('playing');
+    btn.setAttribute('aria-pressed','true');
+    setStateLabel('on');
+    localStorage.setItem('ambientOn','1');
+  }
+
+  function disableSound(){
+    fadeTo(0.0, 300, () => { audio.pause(); });
+    audio.muted = true;
+    btn.classList.remove('playing');
+    btn.setAttribute('aria-pressed','false');
+    setStateLabel('off');
+    localStorage.setItem('ambientOn','0');
+  }
+
+  function setStateLabel(mode, lang){
+    const map = {
+      on:  { es:'Detener', en:'Disable', de:'Stoppen' },
+      off: { es:'Activar', en:'Enable',  de:'Aktivieren' }
+    };
+    const l = lang || localStorage.getItem('lang') || 'es';
+    const text = (map[mode] && map[mode][l]) || (mode==='on'?'Detener':'Activar');
+    const el = btn.querySelector('.state span[data-lang="'+l+'"]') || btn.querySelector('.state span');
+    if(el){ el.textContent = text; }
+  }
+
+  function fadeTo(target, ms, done){
+    const start = performance.now();
+    const from = audio.volume;
+    const to   = clamp(target,0,1);
+    function step(t){
+      const p = Math.min(1, (t-start)/ms);
+      audio.volume = from + (to-from)*p;
+      if (p<1) requestAnimationFrame(step); else done && done();
+    }
+    requestAnimationFrame(step);
+  }
+
+  function clamp(x,a,b){ return Math.max(a, Math.min(b, x)); }
+
+  function setVolTrack(){
+    const pct = Math.round(clamp(parseFloat(volEl.value),0,1)*100);
+    volEl.style.setProperty('--vol', pct + '%');
+  }
+})();
+</script>
+  
 </body>
 </html>
