@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galápagos • Instructivo / Guide</title>
+  <meta name="description" content="Instrucciones de llegada y mapa • Arrival instructions & map" />
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1j7kGPrPj0vZQpG3xci2CkVUoM8C+1G6H0w0CwYQ=" crossorigin=""/>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f8f7;color:#222;}
+    .wrap{max-width:1000px;margin:0 auto;padding:20px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:2px solid #ddd}
+    header h1{font-size:20px;margin:0}
+    .lang button{cursor:pointer;margin:0 4px;padding:6px 12px;border:none;border-radius:8px;background:#28a58a;color:#fff;font-weight:bold}
+    .lang button.active{background:#166c5b}
+    .section{margin-top:20px;padding:15px;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+    #map2d{width:100%;height:520px;border-radius:10px}
+    .cta{margin-top:10px}
+    .cta a{display:inline-block;margin:6px 10px 0 0;padding:8px 12px;background:#28a58a;color:#fff;text-decoration:none;border-radius:6px}
+    .cta a:hover{background:#166c5b}
+    .legend{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:#444;align-items:center}
+    .legend .item{display:flex;align-items:center;gap:6px;background:#f0f6f5;border:1px solid #cfe8e1;border-radius:999px;padding:4px 8px;}
+    .pin{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:50%;color:#fff;font-size:16px;font-weight:700;box-shadow:0 1px 3px rgba(0,0,0,.25);}
+    .pin-plane{background:#1e88e5}   /* azul */
+    .pin-ferry{background:#43a047}   /* verde */
+    .pin-bus{background:#f4511e}     /* naranja */
+    .pin-star{background:#6d4c41}    /* marrón */
+    footer{margin-top:20px;font-size:12px;color:#555;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🗺️ Galápagos • Instructivo / Guide</h1>
+      <div class="lang">
+        <button id="btn-es" class="active">ES 🇪🇸</button>
+        <button id="btn-en">EN 🇬🇧</button>
+      </div>
+    </header>
+
+    <div id="es" class="section">
+      <h2>Bienvenido/a 🤝</h2>
+      <p>Has llegado al Aeropuerto Ecológico Seymour en Baltra. Aquí empieza tu aventura hacia Puerto Ayora:</p>
+      <ol>
+        <li>🚌 Bus del aeropuerto → Canal de Itabaca (10–15 min).</li>
+        <li>⛴️ Ferry → muelle de Santa Cruz (Itabaca).</li>
+        <li>🚕/🚌 Taxi o bus hacia Puerto Ayora (el bus llega al Terminal El Mirador; de ahí taxi al hotel).</li>
+      </ol>
+      <div class="cta">
+        <a href="Folleto ecológico natural verde Español.pdf" download>📄 Descargar instructivo en Español</a>
+        <a href="https://earth.google.com/earth/d/1XmWnWw7mKk_bTjB9ppa90vUA_28ilYze?usp=sharing" target="_blank" rel="noopener">🌍 Vista 3D (Google Earth)</a>
+      </div>
+    </div>
+
+    <div id="en" class="section" style="display:none">
+      <h2>Welcome 🤝</h2>
+      <p>You have arrived at Seymour Ecological Airport on Baltra Island. Here begins your journey to Puerto Ayora:</p>
+      <ol>
+        <li>🚌 Airport bus → Itabaca Channel (10–15 min).</li>
+        <li>⛴️ Ferry → Santa Cruz pier (Itabaca).</li>
+        <li>🚕/🚌 Taxi or bus to Puerto Ayora (bus stops at El Mirador Terminal; then taxi to your hotel).</li>
+      </ol>
+      <div class="cta">
+        <a href="Folleto ecológico natural verde Inglés.pdf" download>📄 Download guide in English</a>
+        <a href="https://earth.google.com/earth/d/1XmWnWw7mKk_bTjB9ppa90vUA_28ilYze?usp=sharing" target="_blank" rel="noopener">🌍 3D View (Google Earth)</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🗺️ Mapa (KML) embebido / Embedded Map</h2>
+      <div id="map2d"></div>
+      <div class="legend">
+        <div class="item"><span class="pin pin-plane">🛫</span> Aeropuerto / Airport</div>
+        <div class="item"><span class="pin pin-ferry">⛴️</span> Ferry / Canal</div>
+        <div class="item"><span class="pin pin-bus">🚌</span> Terminal / Bus</div>
+        <div class="item"><span class="pin pin-star">★</span> Centro / Puerto Ayora</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🎶 Música Ambiental / Ambient Music</h2>
+      <audio controls loop>
+        <source src="Ambient music.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+      </audio>
+    </div>
+
+    <footer>
+      © 2025 Galápagos Guide — Escanea el QR para abrir esta página
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7kGPrPj0vZQpG3xci2CkVUoM8C+1G6H0w0CwYQ=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+  <script src="https://unpkg.com/esri-leaflet@3.0.11/dist/esri-leaflet.js"></script>
+  <script>
+    // Idioma
+    const esBtn=document.getElementById('btn-es');
+    const enBtn=document.getElementById('btn-en');
+    const es=document.getElementById('es');
+    const en=document.getElementById('en');
+    esBtn.addEventListener('click',()=>{
+      es.style.display='block'; en.style.display='none';
+      esBtn.classList.add('active'); enBtn.classList.remove('active');
+    });
+    enBtn.addEventListener('click',()=>{
+      es.style.display='none'; en.style.display='block';
+      enBtn.classList.add('active'); esBtn.classList.remove('active');
+    });
+
+    // Leaflet + KML
+    const map = L.map('map2d', { zoomControl: true });
+    const imagery = L.esri.basemapLayer('Imagery'); imagery.addTo(map);
+
+    // Custom emoji divIcons
+    function divIcon(cls, emoji) {
+      return L.divIcon({
+        className: '',
+        html: `<div class="pin ${cls}">${emoji}</div>`,
+        iconSize: [28,28],
+        iconAnchor: [14,14],
+        popupAnchor: [0,-12]
+      });
+    }
+    const icons = {
+      plane: divIcon('pin-plane','🛫'),
+      ferry: divIcon('pin-ferry','⛴️'),
+      bus:   divIcon('pin-bus','🚌'),
+      star:  divIcon('pin-star','★')
+    };
+
+    const kmlLayer = omnivore.kml('mapa.kml')
+      .on('ready', function() {
+        try { map.fitBounds(kmlLayer.getBounds(), { padding: [20,20] }); }
+        catch(e) { map.setView([ -0.739, -90.3 ], 10); }
+
+        // Asignar íconos por nombre del marcador
+        kmlLayer.eachLayer(function(layer) {
+          if (layer && layer.feature && layer.feature.properties) {
+            const name = (layer.feature.properties.name || '').toLowerCase();
+            if (layer.getLatLng && name) {
+              let icon = null;
+              if (name.includes('aeropuerto') || name.includes('airport') || name.includes('seymour') || name.includes('baltra')) icon = icons.plane;
+              else if (name.includes('ferry') || name.includes('itabaca') || name.includes('canal')) icon = icons.ferry;
+              else if (name.includes('terminal') || name.includes('bus') || name.includes('mirador')) icon = icons.bus;
+              else if (name.includes('puerto ayora') || name.includes('centro') || name.includes('downtown')) icon = icons.star;
+              if (icon && layer.setIcon) layer.setIcon(icon);
+            }
+            // Popup con nombre/desc
+            if (layer.bindPopup) {
+              const desc = layer.feature.properties.description || '';
+              const title = layer.feature.properties.name || 'Lugar';
+              layer.bindPopup(`<strong>${title}</strong><br>${desc}`);
+            }
+          }
+        });
+      })
+      .on('error', function() {
+        map.setView([ -0.739, -90.3 ], 10);
+      })
+      .addTo(map);
+  </script>
+</body>
+</html>

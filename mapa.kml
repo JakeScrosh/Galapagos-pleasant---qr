@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Trip from Baltra to Puerto Ayora 🚍🚤🌴</name>
+	<gx:CascadingStyle kml:id="__managed_style_09D232AF403A4ACC91C7">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.8</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=7b1fa2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_193CCB4BCE3A4ACC91C6">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.5</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=7b1fa2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1BF70606DE3A475DA55F">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_2702190EB63A4AC265FB">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=388e3c&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_03DF42B7F43A4AC3E737">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff3c8e38</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_05B92C87FD3A4AC3E736">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1F9F4928D63A4AC3E736</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_03DF42B7F43A4AC3E737</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_00572E7A963A4A6D0E80">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1BA9086C163A4AC265FB">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=388e3c&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_03FB4F78873A4A9E6767">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=66bb6a&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1A5A7899BB3A4A9E6764">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=66bb6a&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0B72843F583A4ACC91C6">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_193CCB4BCE3A4ACC91C6</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_09D232AF403A4ACC91C7</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_14D7BE73423A4A984198">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff6b7900</color>
+				<width>12</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1F9F4928D63A4AC3E736">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff3c8e38</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_087234F6EC3A475DA55F">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1BF70606DE3A475DA55F</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_019BC12F833A475DA560</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_048164848E3A4A984198">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff6b7900</color>
+				<width>8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0046439FF03A4A984197">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_048164848E3A4A984198</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_14D7BE73423A4A984198</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_07CAC4EDD33A4AC265FB">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1BA9086C163A4AC265FB</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2702190EB63A4AC265FB</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_175EC9A80C3A4A6D0E7C">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/simple_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<gx:displayMode>panel</gx:displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0EC7BA509A3A4A6D0E7C">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_175EC9A80C3A4A6D0E7C</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_00572E7A963A4A6D0E80</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_25934B5A2B3A47625FBC">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_103B19BF813A47625FBC">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_019BC12F833A475DA560">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/card_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_09CBCB71AA3A4A9E6764">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1A5A7899BB3A4A9E6764</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_03FB4F78873A4A9E6767</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_0B81240AE73A47625FBC">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_103B19BF813A47625FBC</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_25934B5A2B3A47625FBC</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="061B2221723A475CCE68">
+		<name>Punto de llegada / Arrival Point / Ankunftspunkt</name>
+		<description><![CDATA[<div>- Usted se encuentra actualmente aquí saliendo del Aeropuerto Seymour.&nbsp;<br></div><div><br></div><div><i>- Y</i><i>ou are here, exiting Seymour Airport</i><br></div><div><br></div><div><i>-&nbsp;</i><i>Sie sind hier, am Ausgang des Flughafens Seymour</i><i></i><br></div><div><br></div><div><br></div><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-90.26851470674715</longitude>
+			<latitude>-0.4449846674997914</latitude>
+			<altitude>53.57944846120062</altitude>
+			<heading>2.610036050940416</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>434.6223102921067</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0B81240AE73A47625FBC</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdXU0d1Y0V3BXYStOY2VsVmRyT2ovYldJci9PcUsxN3JReGN6VWMxb1NZL3JLM1VLWFJ6amlFVlZOSVQyLzY1YUZ6cjdVZlIrUXFQY2JuMTlDS2pnRnk5WCtBZnJNanlaRWJ4NG1DRms2WGQxTGsrOEcwSnNTb3hEVzVPSTV1b3JPb3ZIVWVTUnNRamh2dTA5eW84N2Q0bUJzN3dmVnN0NE13cVhKeEtvVGVZdXozWXNlMlhHS3ZuLzlIZHcrcVYwQ1FxTHk4ZHVXSmdLeTEzMXRCOHdQM21lT0dMUlpxYXZ3QVdmMERLQW5lT0NkRUc2eXFBMGhURTdNVkU3M0oyZlU9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuAtAYLKv3ecRPnCcQfdxaTUMMI8xQD7QgcG7l247M5Uje3DYj73m2TVW6Xr85hIUMZAtUFpj4G7Bdu5yV1B88BzmsN3pxhcZipCe_v_AgRXwFXdk6MKHadhzIKTc1FGpqXRu_ILUCXJgpUVRRntsk8VIXjhYfEjEOQkbHHavKhRjpHxAzd4xCZ3JBapx8MKtfX97IfNJqQU7LPfV5givOo3_VXsuuPVNydSpAIItowpTbHflqMhh8yHxvfN_WLh8V_fXxzDq71ANgly7lxFG8TbPQ6MEqQMBWtaw?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<Point>
+			<coordinates>-90.26861025362399,-0.4447917758111402,53.83574937943923</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0DA3C75A553A4787D854">
+		<name>Bus al muelle de Baltra / Bus to Baltra Pier / Bus zum Hafen von Baltra</name>
+		<description><![CDATA[<h2><b>Español</b><br></h2><div><b>¡Bienvenido/a a Galápagos! </b>🌵🦎<br></div><div>Al salir del Aeropuerto Seymour (Baltra), sigue la señalización a la salida principal: frente a la terminal verás el mostrador de Lobito donde compras tu boleto del bus (tarifa referencial US$5 por persona, pago en efectivo).<br></div><div><br></div><div>Con tu ticket, el personal te indicará el bus hacia Canal de Itabaca. Tu equipaje lo maneja el personal y va en el área de carga trasera del bus; ellos se encargan de subirlo y bajarlo por ti.<br></div><div><br></div><div>A bordo, toma asiento; el traslado es corto (≈7–10 min) y cómodo. Mientras avanzas, echa un vistazo: el paisaje árido de Baltra a veces regala la vista de iguanas terrestres y cactus Opuntia junto al camino.<br></div><div><br></div><div>El bus te deja frente a la entrada del muelle de Baltra: aquí termina esta primera etapa.<br></div><div><br></div><h3><b>English</b><br></h3><p><br></p><div><b>Welcome to Galápagos! 🌵🦎</b><br></div><div>When you leave Seymour Airport (Baltra), follow the signs to the main exit. Right in front of the terminal, you’ll find the <i>Lobito</i> counter where you can buy your bus ticket (approx. US $5 per person, cash only).<br></div><p><br></p><p>With your ticket, the staff will direct you to the bus heading to Itabaca Channel. Your luggage is handled by the staff and placed in the rear cargo area—they take care of loading and unloading for you.<br></p><p>On board, just take a seat; the ride is short (≈7–10 minutes) and comfortable. Along the way, keep an eye out: the arid Baltra landscape often shows land iguanas and Opuntia cacti right by the road.<br></p><p>The bus will drop you off at the entrance of Baltra Pier—this is the end of the first stage of your journey.<br></p><h3><b>Deutsch</b><br></h3><p><br></p><div><b>Willkommen auf Galápagos! 🌵🦎</b><br></div><div>Beim Verlassen des Flughafens Seymour (Baltra) folgen Sie den Schildern zum Haupteingang. Direkt vor dem Terminal befindet sich der <i>Lobito</i>-Schalter, an dem Sie Ihr Busticket kaufen können (ca. 5 US-$ pro Person, Barzahlung).<br></div><p><br></p><p>Mit dem Ticket weist Sie das Personal dem Bus zum Itabaca-Kanal zu. Ihr Gepäck wird vom Personal im hinteren Laderaum verstaut – sie kümmern sich um das Be- und Entladen.<br></p><p>An Bord nehmen Sie einfach Platz; die Fahrt ist kurz (≈7–10 Minuten) und bequem. Unterwegs lohnt sich ein Blick aus dem Fenster: In der trockenen Landschaft Baltras sieht man oft Landleguane und Opuntien-Kakteen direkt am Straßenrand.<br></p><p>Der Bus bringt Sie bis zum Eingang des Baltra-Piers – hier endet die erste Etappe Ihrer Reise.<br></p><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-90.26859983080784</longitude>
+			<latitude>-0.4444363878587405</latitude>
+			<altitude>53.5184130104364</altitude>
+			<heading>2.553684661259927</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>143.1520966457356</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0EC7BA509A3A4A6D0E7C</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdmo0YWpFQWJXMmVjRTY2a3l2NGJ1SEEvWDAxNXMvWVhGQXdkbEJDa3c2cWVkSjh1Mmg4VkJDTVdZYWJobkxwZXc2RnpWeFdaQ01oNkhqaEVldEFKV3BCeWY4anBuZXNXODFIcmh6YWJSM1pDV1hFbk9naGtoai9SZkd2NVJTeHQ0ZitxVGs3dVJ5ZXNUeDlyYTd0RnNqdm9UeC9uZzZuWXpHbSt3R3JGcUZ2OXFOUTNYelhXcVp2eWZrNXBOamwvdkpVNlpyNFl6cC9maGtuVXZtYStTUXBaWW9QbVMvUEkrSEhLbXd1ZHRmSW5BQ1JCaUQ2a1hNYldyNTlMZ1ZKM2s9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuyER-OInZjU4sMWznTsIFpG85Rr8Fl9S6ApH4QdRVeXk_raB6TkWXHGC2dQzpWGYPtKw9ETTeeMHdcNKedAns7FkY_UUx7B1iiiIuEWohfsKQjfR6ysqbMH35cIQ4FU9KIW0bIsHOGSa3N1yIS55AMqw_LBbEuY4tANYMEe-hXc_l58o2Jv3yvVQwhyslXUiW7UQRcP5CK7uKE5lfOAA9jTVG_2Fqf6iv8SNRRu_cbHzjhmw1sz403W7esz5cHVutw2cYSlt7NsCGYXIECxhJWYq6iW5w5MTMuzA?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+			<gx:Image kml:id="hosted_image_QURiREJLdi9kVjMzMXptNzZYdXdHcjFUTkcyaU5EK3hvWHMxNjJkdit0RThqQlJ2ODJuUDBqUDBSc0NYL0dTclZzM3BPTXZMbHlxZ2tiR3dGc2VhcFZyYjh4dm5WdkNWM3RVa3hHSzRtR3ErVGZJVS9jVDFCbVdJbWZsOWNXZ21TSm1TUXdCdk5EdkxMNHpOTm55S2dOdHlSZmZEaGdZT2lmdUZ1SlpDNFdTOUZEamMrK0g2UXFMckwwTW1pZ1haclo5MGk4NitYVHM2WEpEMjA5WllRWUtaMHVBbUdBOTFWVEl3N0V5QUVlMzAvOTJEYlo3bmlHMDlNb2pLTlk3WkVMSkRnbjA9_0">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuvu8Xj2betqRlhABW8ruRdg-dHsX8-gqTsXKhdyZ1lTqO7iZzU96fOZdQTIeVoeuDmnaL09TwliBvybqElskbvouSlbLPLVKGqTVd3hcmqtrneEL6qpnNiZq5pHgM085PkYfgQDygDKEZkkIukHYIIvJqUbIMJZtRF6yCW8BfgoETZ9vfyB0N1UCSO0QEr0Kgo4shqjjn7tytRzBvq4NdgaRuzH_BuwmwyIK_v8S16P_qVDv1dF7WNJ5d6SpU22aD4QRotGRjzPrWkWwV1wR7V3IAWF8mOUx56gw?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+			<gx:Image kml:id="hosted_image_QURiREJLdXA1eWpjRVJkbklXMHJZNmNjQWJmMi9lT1UyNW45eDVRZU95dVdyWEwrWkY1b0tHRG1JNElGSFNFNmRaSmFteEYxNTFhanpqcDZtWStQUm1kMGhvKzVKaE5pQWliVGZ0R2NDd3ZkMTFMaWFPK2RBaFRZa3pYRm1QUXgrTkpMZWY4VmUramNpbjJiRE1RbEduOGY3eXBKbFg1aHFFSFZ4YWFib0wzY0kzK2FPZFN6OXdCZW14QUQxcE9oYmpsVEpYOUtjVHl5U1YraWdiWlNad2hPYkp0Y25lSll3bVBtUkZhZ2hmOVZmSlUrWUtFcXh5TExYL24zdm9zbXFvV0JMdHc9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKv70Obt7jzpUhEsDASMCjkn_pDe1TG0BK-etnGBa6uYxTSD4Y3HFpKI8bRSgDMLm1ToDb5QKVSsZhgJBdjg1fMkAamlXjQyu8ilzsYmF284z8DqQ0Sp0JN7J2N5b_cd47Ezj-0Vs_chz8fKTPINIgCDlgVL4P9WeKH8B8JFM4OznCoCNTvoQDC9GJFHUL3wpM-5DZbepOErsgjWAgrFw8yKD4UPaopT1pkc5mfM65efnfks10KZnNPJe9DKakWHhUYk0EnxLAJ6Kfmxiix3aA-Oqv2h3XdBowXK-A?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<LineString>
+			<coordinates>
+				-90.26836227122621,-0.4445970330532765,0 -90.26809842818406,-0.4445852246519961,0 -90.26782508847852,-0.4445974196133779,0 -90.26776228972597,-0.4445065692333172,0 -90.2677494110719,-0.4444482094219203,0 -90.26774507003334,-0.4444276084607417,0 -90.2677649657939,-0.4443262320396149,0 -90.26784055236516,-0.4442361219453262,0 -90.26792328368566,-0.4442288546003774,0 -90.26800411871139,-0.4442530174434849,0 -90.26815584917406,-0.4443154449833649,0 -90.26844944425648,-0.4444697875141529,0 -90.26877699372403,-0.4444505400390728,0 -90.26911564723876,-0.4443975421528765,0 -90.26930527437663,-0.4442421518280408,0 -90.26946114843872,-0.4441374282702037,0 -90.26965383325162,-0.444052283784298,0 -90.26983116948077,-0.4440372742147844,0 -90.27052788218002,-0.4440762303028657,0 -90.27079467717174,-0.4440326409513385,0 -90.27104343405952,-0.4439581867840477,0 -90.27153601406124,-0.4438162864919347,0 -90.27203794829239,-0.4436912889879295,0 -90.27252746714994,-0.4435914390289916,0 -90.27287216104789,-0.443599840490658,0 -90.27324569510299,-0.4437080900415155,0 -90.27356537302317,-0.4438956061596262,0 -90.2742163978736,-0.4443830471660036,0 -90.27546352857759,-0.445299510978892,0 -90.27605159894333,-0.4462327257574186,0 -90.27667334876477,-0.4472331230296636,0 -90.2779252661124,-0.4492192652168428,0 -90.2785401121978,-0.4501714988937655,0 -90.27915752645353,-0.4511305114122565,0 -90.27939206177827,-0.4516448096983176,0 -90.27959653814649,-0.452198348764102,0 -90.27996451344866,-0.4532954265600448,0 -90.28015790069531,-0.4538945914937272,0 -90.28033967941985,-0.454471730713547,0 -90.28053341680179,-0.4550576632237925,0 -90.28059931584511,-0.4557215703895027,0 -90.2806775282672,-0.4569599613200979,0 -90.28056338836137,-0.458226327238929,0 -90.2802459216706,-0.4633085885481086,0 -90.27991221025151,-0.4641138466780224,0 -90.27957491726512,-0.4649136433111622,0 -90.27923225707768,-0.4657268621550064,0 -90.27906175975932,-0.4661169501258035,0 -90.27897592060333,-0.4663352293127136,0 -90.27894186223966,-0.4665258594347097,0 -90.2790154103036,-0.4667889645173302,0 -90.27913695282592,-0.4670557378322753,0 -90.27935495740364,-0.4675930327295031,0 -90.27979368933246,-0.4686773610918357,0 -90.2802223779324,-0.4697393199457403,0 -90.28044805269836,-0.470304152819467,0 -90.28054670001761,-0.4705742418140705,0 -90.28066959356863,-0.4708175013952573,0 -90.28082374229501,-0.4709794438005049,0 -90.28106439847272,-0.4711100047826935,0 -90.28147992810236,-0.4712640247426465,0 -90.2822503562864,-0.4715797173288638,0 -90.28345525876654,-0.4720806706178499,0 -90.28465626684817,-0.4726111325147271,0 -90.28470380665675,-0.4727329437095181,0 -90.28467425367867,-0.4728511064736481,0 -90.28458863443785,-0.4730885753576248,0 -90.28440906155417,-0.4735009804334554,0 -90.28407362956621,-0.4743365832670132,0 -90.28375300970195,-0.4751752907843917,0 -90.28341140401713,-0.4759936003957086,0 -90.28273690823654,-0.4776532407682103,0 -90.28240901319379,-0.4784764690430085,0 -90.28223554672302,-0.4788977702683173,0 -90.28215761493951,-0.4791017779079325,0 -90.28210565812088,-0.4792052759492619,0 -90.28203717928936,-0.4792933135408085,0 -90.28190110924467,-0.4793297703437688,0 -90.2817292725925,-0.4792421190718711,0 -90.28146641882219,-0.4790957590967205,0 -90.28094209250887,-0.4787989454521487,0 -90.28052016374657,-0.4785946013245875,0 -90.28031226141823,-0.4785017471582123,0 -90.28011521738243,-0.4784522109626967,0 -90.27987153396475,-0.4784809590268602,0 -90.27963015129093,-0.4785434421720346,0 -90.27935821678155,-0.4786090497046413,0 -90.27919585445946,-0.4786678920227684,0 -90.27907884900773,-0.4788216766748239,0 -90.27898996928208,-0.4789879117926297,0 -90.27878875788625,-0.479293043498378,0 -90.2782971306101,-0.4799181373515479,0 -90.27777523238295,-0.4805063562212231,0 -90.27751110750232,-0.4808077849909456,0 -90.2773690140174,-0.4809631294722706,0 -90.27720858623776,-0.4810715904644141,0 -90.27654931395027,-0.4813097714810341,0 -90.2759024956176,-0.4815650335866307,0 -90.2758278594691,-0.4816828347076292,0 -90.27581413664115,-0.4817987657111935,0 -90.27584026450799,-0.4819013471989396,0 -90.27589722096354,-0.4819837585404486,0 -90.27608071569124,-0.4820544695095884,0 -90.27629665603901,-0.4820994249579415,0 -90.27672345685622,-0.4821470532298171,0 -90.27689152214035,-0.4822043940473118,0 -90.27706421514732,-0.4823067917496331,0 -90.27727453298994,-0.482376862659975,0 -90.27738840155926,-0.4824682390322123,0 -90.27737385808962,-0.4825583304774959,0 -90.27728813024102,-0.4826051065973328,0 -90.27713090785151,-0.4826244356825644,0 -90.27706065547686,-0.482679214796672,0 -90.27707407484571,-0.4827804958501024,0 -90.27711828909571,-0.4829762115535285,0 -90.2771858012951,-0.4831178004898954,0 -90.27726582227777,-0.4832497572863437,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="053A4BDF093A4A6F1229">
+		<name>Muelle de la isla Baltra / Baltra Island Pier / Pier der Insel Baltra</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p>El muelle de Baltra es el punto de enlace entre el aeropuerto Seymour y la isla Santa Cruz. Desde aquí parten los ferris que cruzan el Canal de Itabaca, un estrecho de aguas turquesa 🌊 que separa ambas islas. El trayecto dura apenas 5 minutos y, mientras esperas o navegas, puedes observar lobos marinos descansando en los muelles, aves marinas sobrevolando y, con suerte, tiburones de aleta negra o rayas nadando bajo la superficie 🐟.<br></p><h3><b>English</b><br></h3><p>Baltra Pier is the main connection between Seymour Airport and Santa Cruz Island. From here, ferries cross the turquoise waters 🌊 of the Itabaca Channel, the narrow strait separating the two islands. The ride takes only about 5 minutes, and while you wait or sail, you may spot sea lions on the docks, seabirds overhead, and, with luck, blacktip sharks or stingrays swimming just below the surface 🐟.<br></p><div><br></div><h3><b>Deutsch</b><br></h3><p>Der Baltra-Pier ist die Verbindung zwischen dem Flughafen Seymour und der Insel Santa Cruz. Von hier aus fahren die Fähren über den türkisfarbenen Itabaca-Kanal 🌊, der beide Inseln trennt. Die Überfahrt dauert nur etwa 5 Minuten, und während Sie warten oder fahren, können Sie Seelöwen auf den Stegen sehen, Seevögel beobachten und mit etwas Glück Schwarzspitzenhaie oder Rochen direkt unter der Wasseroberfläche schwimmen sehen 🐟.<br></p>]]></description>
+		<LookAt>
+			<longitude>-90.27739827038334</longitude>
+			<latitude>-0.4834633817886621</latitude>
+			<altitude>4.729215076875515</altitude>
+			<heading>2.55368465741903</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>335.9219404296891</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_087234F6EC3A475DA55F</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdE5OREdBd3plSzI1NWRCNThkM2ZVVG53Mmxvd3NSY3hzaTFWSzF3bE9yY3oyZlZrbDNrckdsQWNHNzNDU0VueThacnJvMFVxVGpZUGV3R2VJQ2pjV3pKUTdyVm41YWYxei9ReEphZGl6SFJoc3orRUtIVEpVQnVleWZoZUMwdEhvdlc4QXg0bzl4c2ZiOTdFU2VqTDVaVDRYc2MxWkIrMWRWakRwa0VDK1VrUlh0MTR3VFM4RzdRbGJhUExvb3pRa01qa0x0VXZtVGtJZVdQYTMzeHlBRmxTZGFaeVRVL3hKT3Y4VmtsaVA4Ty9RNjk2TlRDS1VtbnJram1YZVpsRkE9_0">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKtAHRL8vuaO2t0XDXSP0UDh_WyBNSpmMS7UVJ8IkeYyss0O4-DQxizOx99jyYjumOq7An6Ve00er-Ux_G-4oBhJ8O9UoetKqHoWiKuyPsjst8eb20uMxvHttbeGgBKV2fj9fXOtLuOCj5z5vrh1haXLxfb-adMxUEhKt3TaG9768pRp90_41Fe0hs9n_qum1Vpm3V1CpGi2-hRlmByN9XY1JF5Yc3BnDPk_8Qoysjgb7MLhmX5BZ5qyjejy2s7HHtHiEiL9GIidxBFzoWge21wgT7r9JPt9x-SzWQ?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+			<gx:Image kml:id="hosted_image_QURiREJLdjVzY3laTFNJL1BXOFVYbDhuRXFrc1dFajZwWkh1b09lNU1nb2p6MTh4VWNWN1dVbTF1V1lwL3hLVWFwbURFQ29BdTdpbXg1S0NHRXVFS0NCZ2J2azVMajluL2J1Z1RYQW9iSjVIMys1NitEckZ5elh2TDBmaEJZVW84V1pYdFpwanRVSm1uMCtIaC9iaXJua0o0aGRaWE5FbzZ1MGFUSC9MZXlsZEFMS3RkYUpwNk5YVG9VSEF4Y2UvWCtBV0tUWG52WStVQ0NEMmlDNVh6bFUxTjRrb0VodlVIeTlKU0x3SXZXY3Y4YnFFdUFiUEdhQUptN2x6aGRIbjJFcllOQWs9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKu_XYe1aoGyM0YSGgxf9nGgztbSchZ5j6LaHLMDIcUArWIDnTig4FAd1sf9qhw-dasH5-R1A-KYcW2AS2dvC0wN7awCJqGhljQ6cmpjcybW97bGIWOXYxQsYWXYSBuAtaKsvIyQ2O-oPDoGaKk7nhWTQBdO-b3U0WZQrR1IH4Oe2PuCbuCh3BMdQg0RpVhZ7D9gDx3bEmbhuV9y1R5eTspPFMtIBe89D48FXJaTqAIHNE7dN0AC5uR1Jd5D0tsgiqEdttbnhlz9MQhS1BDDvCnoJAdQTZR6fb5zpQ?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<Point>
+			<coordinates>-90.27729948273189,-0.4832490705959274,6.278289253883766</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="09AAF3E7E93A4A7CE187">
+		<name>Canal de Itabaca — Corredor entre islas /  Itabaca Channel — Island Corridor / Itabaca-Kanal — Inselkorridor</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p>En el Canal de Itabaca, baja del bus solo con tu equipaje de mano: el personal descarga las maletas grandes y las coloca en la parte superior del ferry 🚤. Únete a la fila del ferry público y, si no hay embarcación en ese momento, espera unos minutos. Al abordar, paga en efectivo a bordo (US$1 por persona, lleva sencillo), siéntate y ponte el chaleco salvavidas cuando te lo indiquen; el cruce es corto (5–10 min). Tu equipaje viaja contigo (lo maneja el personal) y, mientras avanzas, puedes admirar el entorno: este canal natural separa Baltra de Santa Cruz y a veces regala la vista de piqueros, fragatas o lobos marinos 🦭—obsérvalos sin acercarte ni alimentarlos. Al llegar, desembarcas en el muelle de Santa Cruz y continúa la siguiente etapa.<br></p><div><br></div><h3><b>English</b><br></h3><p>At the Itabaca Channel, step off the bus with only your hand luggage: the staff will unload your large suitcases and place them on the top of the ferry 🚤. Join the line for the public ferry, and if there is no boat at the moment, wait a few minutes. Once on board, pay in cash (US$1 per person, carry small bills), take a seat, and wear the life jacket when instructed; the crossing is short (5–10 minutes). Your luggage travels with you (handled by the staff), and as you move across the water, enjoy the scenery: this natural channel separates Baltra from Santa Cruz and sometimes offers views of blue-footed boobies, frigatebirds, or sea lions 🦭—admire them without approaching or feeding them. Upon arrival, you disembark at the Santa Cruz pier and continue to the next stage.<br></p><div><br></div><h3><b>Deutsch</b><br></h3><p>Am Itabaca-Kanal steigen Sie mit Ihrem Handgepäck aus dem Bus: Das Personal lädt Ihre großen Koffer aus und verstaut sie oben auf der Fähre 🚤. Stellen Sie sich in die Schlange der öffentlichen Fähre; falls gerade kein Boot da ist, warten Sie ein paar Minuten. An Bord zahlen Sie bar (1 US-$ pro Person, am besten mit Kleingeld), setzen sich und legen die Schwimmweste an, sobald das Personal Sie dazu auffordert; die Überfahrt ist kurz (5–10 Minuten). Ihr Gepäck reist mit Ihnen (vom Personal betreut), und während der Fahrt können Sie die Umgebung genießen: Dieser natürliche Kanal trennt Baltra von Santa Cruz und bietet manchmal den Anblick von Blaufußtölpeln, Fregattvögeln oder Seelöwen 🦭 – bitte nur beobachten, nicht nähern oder füttern. Bei der Ankunft steigen Sie am Pier von Santa Cruz aus und setzen Ihre Reise fort.<br></p><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-90.27906664814498</longitude>
+			<latitude>-0.4869683846716861</latitude>
+			<altitude>0.4459887892279935</altitude>
+			<heading>2.553684654020428</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>2116.328982565029</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0046439FF03A4A984197</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdjVLVzJ3em5XNUc5dUswcFNCUmVpMmJsUlY0aGg1aGhvMXlzZTFpZUhRa0o2MkdwdlNldEtjUE52eGQ4cTJBMWNwMXowTFZ1TXpzMjF5NUcvNTVWQjJPUFhXd3I4dWhjWHJPVTV3RnFXTjJ5bTk0dGlwZnNZdVFwZ2d6Z2VscFRGb25BMmdNNllrTit6TFBDTlJEQjdNNCswVHM3dDR5eHdIOXc5VUp1WlVxMHNIQWpTd1RsS2dKMVFzYzRaeEtuMFltenJmQ0R1Vm1qU3FaY0t2ZWpXd0I2NlJhMmVTMWJRdXdWRGlJQkcrNjZxY1pMVkpvMkVEQlRMTXdMTEw5b0E9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKvic3AXvFlcmbmajfDkEHctuLuW4gCL8ts--pSqYF8A3bYtSOZalolUMpuAvO4V8qZ-S71eX1Afs0MU2_k3QQ5sBBvvnJ2nZp0_8mJ2Mn3QqZ4fsA5Gm6tg-7ltW9gQjcUJdztk1saya6FtzdD3pva9Y13r-HmY_qIy2AvzBd1LctQ1hHrkB8IIybDT5AsbUfYi5PHP9JJZ3SG8NUgwVw7KR_gIpfL5LSJKbxfaKfzGsKKTGuE_J85D4vglW0-Y-77lz9KyouoYLAs6XNEcJUrUasgYsACmY6YKgQ?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<LineString>
+			<coordinates>
+				-90.27735387209262,-0.4834001395230301,0 -90.27808848555415,-0.4844429205480649,0 -90.27910215761079,-0.4854166164524343,0 -90.28019993818822,-0.4863808896182933,0 -90.28054330334695,-0.4870348572011508,0 -90.28057145224406,-0.4873744975676506,0 -90.28052205310632,-0.4877309003199396,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="0685FA02D53A4A99B178">
+		<name>Muelle de Santa Cruz / Santa Cruz Pier</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p>El muelle de Santa Cruz, en el Canal de Itabaca, es la puerta de entrada a la isla más habitada del archipiélago. Desde aquí continúas en bus o taxi hacia Puerto Ayora, atravesando paisajes de manglares y zonas áridas únicas de Galápagos.<br></p><div><br></div><h3><b>English</b><br></h3><p>Santa Cruz Pier, at the Itabaca Channel, is the gateway to the most populated island of the archipelago. From here, buses or taxis take you to Puerto Ayora, crossing landscapes of mangroves and the island’s unique arid zone.<br></p><div><br></div><h3><b>Deutsch</b><br></h3><p>Der Santa-Cruz-Pier am Itabaca-Kanal ist das Tor zur bevölkerungsreichsten Insel des Archipels. Von hier aus fahren Busse oder Taxis nach Puerto Ayora – durch Mangrovenlandschaften und die einzigartige Trockenzone von Galápagos.<br></p>]]></description>
+		<LookAt>
+			<longitude>-90.28049859098283</longitude>
+			<latitude>-0.487741334248505</latitude>
+			<altitude>2.994555862895403</altitude>
+			<heading>2.553684653480479</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>888.9207336535037</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_09CBCB71AA3A4A9E6764</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdnlKWklNK0pBRVU1NTA0SkwrNHkzblU3TGxKODc3L3JtdWt0cXJOSmNCczY2UXFxMm5HNk8yTDd1QTJxNXE1eHRwUHByZnpsd2tZRXAycUZQWDl3dlFuWnBNVmNKOGxNR0oyWEY3SDYyeTBVQ2x2TmdMU3NrcUpMS0plaUp4akF1cEhhdVJ6TGQ3TG9Gc011Qzk1OXhkeTRXcUM2YmMxUXRwOG4ramdobzZCTnVQaURpdUhFZ3BxSUx0YzdpZ3NPMnVVRzlPeVRhOGkrdjdacXBVa25RWlJONDY1OG9KM1p6YkVwd2hXRldQb3QrSTZFTE85YkxtTkpIVkQzU1V0OTQ9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuRxOAYLgb4XHkS5yc5jlMtnQbmO_HdkNDNuxM0SbHwOtFYKgyxoLesoyNlND_7SRgvKzhEZ-45CkIQEDOzdL7bJSmV9mpSirbXULyVOSgIXIBqHXsMoHmVNE0Rthr38s34rHQOEdCFfikQ6LEjyjpZSt29pA6Orw0DRv-ROha_zdZ479175NkXJDDrYYEp4GSeWjEa6IjwqFe8kCEKJrAO-VdT5bpFYDn-fAd8ev6kQAl-9VxCmGZv1-T_qIV0meiLaAgOEyBWoPzfLQkhPHfkfT8CxTSkxfSpJA?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<Point>
+			<coordinates>-90.2804473038037,-0.4876589913190011,3.002263539328003</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="095E8E37FD3A4AAAFE10">
+		<name>Traslado a Puerto Ayora / Transfer to Puerto Ayora / Transfer nach Puerto Ayora</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p>Al desembarcar, verás el kiosco del bus público junto al muelle: compra tu boleto (US$5 por persona, en efectivo) y toma el bus 🚍 hacia Puerto Ayora. El viaje cruza los altos de Santa Cruz y dura ~45–60 min, con llegada al Terminal Terrestre Indefatigable (sector El Mirador). En ese terminal hay una parada señalizada de taxis; recuerda que en Galápagos los taxis oficiales son camionetas blancas 🚕 (máx. 4 pasajeros, o hasta 5 si es una sola familia). Desde allí puedes caminar si tu hotel está cerca o tomar una taxi-camioneta por ~US$2.<br></p><p>¿Prefieres ir directo desde el muelle del Canal de Itabaca? Puedes tomar una taxi-camioneta privada allí mismo después de desembarcar: US$25–30 por vehículo y ~35–45 min hasta tu hotel. Si viajas solo o en pareja, también puedes compartir la camioneta con otros pasajeros, siempre respetando el máximo de 4 personas (o 5 si es una sola familia).<br></p><div><br></div><h3><b>English</b><br></h3><p>Upon disembarking, you’ll see the public bus kiosk next to the pier: buy your ticket (US$5 per person, cash) and take the bus 🚍 to Puerto Ayora. The ride crosses the highlands of Santa Cruz and lasts ~45–60 minutes, ending at the Indefatigable Bus Terminal (El Mirador sector). At the terminal, you’ll find a marked taxi stop; remember that in Galápagos, official taxis are white pickup trucks 🚕 (max. 4 passengers, or up to 5 if it’s a single family). From there, you can walk if your hotel is nearby or take a pickup-taxi for about US$2.<br></p><p>Prefer to go directly from the Itabaca Channel pier? Take a private pickup-taxi right after disembarking: US$25–30 per vehicle and ~35–45 minutes to your hotel. If you’re traveling alone or as a couple, you can also share with other passengers, always respecting the maximum of 4 people (or 5 if it’s a single family).<br></p><h3><b>Deutsch</b><br></h3><p>Nach dem Aussteigen sehen Sie den Kiosk des öffentlichen Busses direkt am Pier: Kaufen Sie Ihr Ticket (5 US-$ pro Person, bar) und nehmen Sie den Bus 🚍 nach Puerto Ayora. Die Fahrt führt über das Hochland von Santa Cruz und dauert etwa 45–60 Minuten, mit Ankunft am Terminal Terrestre Indefatigable (Sektor El Mirador). Dort gibt es einen gekennzeichneten Taxistand; beachten Sie, dass die offiziellen Taxis auf Galápagos weiße Pick-ups 🚕 sind (max. 4 Passagiere oder bis zu 5, wenn es sich um eine einzige Familie handelt). Von dort können Sie zu Fuß gehen, falls Ihr Hotel in der Nähe liegt, oder ein Taxi-Pick-up für etwa 2 US-$ nehmen.<br></p><p>Möchten Sie direkt vom Pier am Itabaca-Kanal fahren? Dort können Sie nach dem Aussteigen ein privates Taxi-Pick-up nehmen: 25–30 US-$ pro Fahrzeug und etwa 35–45 Minuten bis zu Ihrem Hotel. Wenn Sie alleine oder zu zweit reisen, können Sie sich auch mit anderen Passagieren zusammentun, wobei das Maximum von 4 Personen (oder 5 bei einer einzigen Familie) gilt.<br></p><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-90.27997695699187</longitude>
+			<latitude>-0.4877149236631417</latitude>
+			<altitude>3.568959499125826</altitude>
+			<heading>2.553684640207159</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>383.0350698258917</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_05B92C87FD3A4AC3E736</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdkpiajJ6cWtCRlhIQ1hPVHdOSUtTK1ZqcTVpRVllSHFQaHBiS1hsRHZmRmljZ1RTcEVxUE1nMTZySmFoeCtVUTRyS3FwdE9yM0kwUGt6MmprNUhIL0RWNWpDRm9uVmdtN2ltb29ZcGZaaWsvRmxsSDJWTjVwdlYvd2ZqQjJzOHlUMmw2QmFYRlVaaVN5bUpBVjBPU2xselBCRnY3WWFyV3ZxTllXVHQ3MjZMZW1sVG4vTm1VemVBM01DRXY1bzFOTHBxdTJVSzllVit3L0pDN1BWdE9wbFpjdjQ0Q0RKUTZ2TjZkeUZEUE9QTG1EV1FYRUJvQUlOTzJOQlVzcitzRnM9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKt4LWB0mRQVxncisWLOtEf8qrx1IbRISQsvTKqOkZ0X0T47Gz7Gl6EgyBZR9YqPOtOL1OHwzKeCcSYiiZUPSTXHaWIE-BFoSOU1thlOPgjEqbPd3R8wFRyqR11aOqeBmu3tAFPpXI11xsrnMd63ArZB2pPuD1UsiUj4bdSs_9q8gRZ3p6sXGhFyT66AgYemD9RpAPQkUYjEGL5KkIoC7XAgcr33oSb_Nwe_D21pwe9uAjZbJlTg2dsXnZ6iYUhfUrec20oqn1mM230JWNvzRMwD88uCr2uJUk0?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<LineString>
+			<coordinates>
+				-90.28042162271466,-0.4876384629406707,0 -90.27985314153248,-0.4877301945510936,0 -90.2802547010342,-0.4882823081850022,0 -90.28525166876364,-0.4950863401246074,0 -90.28949745463946,-0.5015537794791936,0 -90.29179376052835,-0.5050775170477659,0 -90.29485931418134,-0.5097346613390873,0 -90.30034958420313,-0.5169461598715268,0 -90.31181354839467,-0.531997621015501,0 -90.31961913193385,-0.5425873843073913,0 -90.3282546928551,-0.5544506132885024,0 -90.33519727864579,-0.5639031264099017,0 -90.33882376451676,-0.5686138509334395,0 -90.34499481007639,-0.5769892125628813,0 -90.34883831548909,-0.58232356147389,0 -90.35614941678131,-0.5920027371065266,0 -90.36281603543856,-0.6007254659125244,0 -90.36973690862364,-0.6100264500823124,0 -90.37297348609928,-0.6145391406453176,0 -90.37436250162447,-0.6162227830876574,0 -90.3752827289629,-0.6174287682546058,0 -90.37658388434259,-0.6190614846975958,0 -90.37694931535027,-0.6195006336355422,0 -90.38437678180841,-0.6244373730853631,0 -90.38483358543021,-0.6248333720434781,0 -90.3851038320234,-0.6259309375627212,0 -90.38558572107918,-0.6266266439269892,0 -90.38614545554238,-0.6271837336084204,0 -90.3935695141644,-0.6334482600038802,0 -90.39659976249948,-0.6360265725682702,0 -90.39713669157216,-0.636589316146063,0 -90.39811468166461,-0.6383938192551948,0 -90.39821940480036,-0.6388149113081109,0 -90.39805892875241,-0.6394481590035007,0 -90.3978690577224,-0.6400751716275146,0 -90.39795668648355,-0.6404528641047363,0 -90.39836922297413,-0.6405305816231641,0 -90.39906167971773,-0.6400125529087249,0 -90.39942332632602,-0.639948549024235,0 -90.39963453635823,-0.6401976920855958,0 -90.39952722923219,-0.6410183668054651,0 -90.39970183567375,-0.6412748685673441,0 -90.40212629547038,-0.641719469025527,0 -90.40255875991218,-0.6420283018649444,0 -90.40278772737848,-0.6425153983432939,0 -90.40332119792281,-0.6447029572033676,0 -90.40493446032319,-0.6489269220175907,0 -90.40586934167524,-0.6511291173567113,0 -90.40598675243456,-0.6518585300406713,0 -90.40583008489953,-0.6525499636970373,0 -90.40529078519538,-0.6532355180211923,0 -90.40253607813443,-0.6559808244428419,0 -90.3992163795876,-0.6593748604441633,0 -90.3946976332422,-0.6657169658736872,0 -90.39340186991669,-0.6670658564091271,0 -90.38566930141671,-0.6737295029220918,0 -90.38028577140793,-0.6763784059025564,0 -90.376302180515,-0.6780126008003761,0 -90.3743669892287,-0.6799073714465185,0 -90.37244412046702,-0.6819389382367376,0 -90.37019639712905,-0.6836165939790918,0 -90.36937277784813,-0.6838530908390784,0 -90.36661773383665,-0.6844494718958839,0 -90.3658852683192,-0.6848425906051734,0 -90.36346037631067,-0.687334269161623,0 -90.36244737053008,-0.6879120863476246,0 -90.35130646713857,-0.6879648594865077,0 -90.34835693307922,-0.6879432668369244,0 -90.34567525191297,-0.6877414899976728,0 -90.34499717630985,-0.6879259055916045,0 -90.34446826383157,-0.6883177905906155,0 -90.34347079736155,-0.6893185375654063,0 -90.34140189241666,-0.6913484674708027,0 -90.34091923140198,-0.6916610190529905,0 -90.33960393013359,-0.691983547533838,0 -90.33590181305773,-0.6929489571688342,0 -90.33220560407794,-0.6944483678513286,0 -90.3316990395891,-0.6945735131045386,0 -90.32864127143166,-0.6943867073603138,0 -90.32737345851238,-0.6943837321881617,0 -90.32538299277512,-0.6945040807066972,0 -90.32545357599585,-0.6959950050716759,0 -90.32557799812452,-0.6967439196673,0 -90.32578956799631,-0.6974271010985688,0 -90.32651274494981,-0.6996798132977173,0 -90.32690672055412,-0.7008951501600287,0 -90.3271323960428,-0.7016224282336796,0 -90.32647926028964,-0.7030102975924696,0 -90.32591377717877,-0.7041313744598057,0 -90.32549543910615,-0.7052335616192643,0 -90.32544496912388,-0.7059227198331232,0 -90.32546995979054,-0.7065035412253036,0 -90.32555376759089,-0.7076436943014932,0 -90.32581112829762,-0.713124567955608,0 -90.32590388630585,-0.7144334890090114,0 -90.32603123547642,-0.7157821491153319,0 -90.32634048237387,-0.7184462199955303,0 -90.32645541004516,-0.7198389249912226,0 -90.32604527738049,-0.723118252334405,0 -90.32625527696942,-0.7238291841477881,0 -90.32667508672679,-0.7243522830511822,0 -90.32742559472518,-0.7253840943520204,0 -90.32813575273988,-0.7303482715818387,0 -90.32827815865456,-0.7314493830417069,0 -90.32833670594064,-0.7322134532778097,0 -90.32829060855238,-0.7325142894978119,0 -90.32790412344647,-0.7338196611261717,0 -90.32753755936517,-0.7350407157080195,0 -90.32741322925332,-0.7353056960945051,0 -90.32724198058031,-0.7355912912474558,0 -90.32712761679328,-0.7357565568972912,0 -90.32653283926571,-0.7363203746298704,0 -90.32464633677574,-0.7380056475953719,0 -90.32444896402413,-0.7378680694063862,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+	<Placemark id="00D38A47623A4AC02F64">
+		<name>Terminal Terrestre Indefatigable / Indefatigable Bus Terminal / Busbahnhof Indefatigable</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p><div> Ubicado en el sector El Mirador, es la parada final del bus público desde el Canal de Itabaca. Aquí encontrarás taxis oficiales 🚕 (camionetas blancas) para continuar hacia tu hotel o el centro de Puerto Ayora.<br></div></p><h3><b>English</b><br></h3><p><div> Located in the El Mirador sector, this is the final stop of the public bus from the Itabaca Channel. Here you’ll find official taxis 🚕 (white pickup trucks) to continue to your hotel or downtown Puerto Ayora.<br></div></p><h3><b>Deutsch</b><br></h3><p><div> Im Stadtteil El Mirador gelegen, ist dies die Endhaltestelle des öffentlichen Busses vom Itabaca-Kanal. Hier finden Sie offizielle Taxis 🚕 (weiße Pick-ups), um zu Ihrem Hotel oder ins Zentrum von Puerto Ayora zu fahren.<br></div></p><div><br></div>]]></description>
+		<LookAt>
+			<longitude>-90.32435607986652</longitude>
+			<latitude>-0.7377758965352628</latitude>
+			<altitude>36.29851240144664</altitude>
+			<heading>2.553684638804746</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>159.6726722725907</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_07CAC4EDD33A4AC265FB</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdDlyK1dMWGRaeTJzUU9kUWNJeWRvRDlZT0dwc21RYWJ1Q3d4b1JsMkcyL1ZiZFpaMldTYXRPZmxuZjhuakVpaWd5VTNERGdiTTVCM1k0NFJxVlcvNS9iekovamlFVFRlOG40T0gxd0hqUW8ySVpmRTRpTG1pcHJPZDdKZDV0Z0RCeGhOUHpmY3dobFI0eUpKRm9RQVZkSEY5ak5SZ3h2ME1hSlNuRGpNbU5ER2Q2OTFpNWhZR3pWdmJsZVFVN3Z3d0pjc0RoQm5ncTJjTEt4amNYbmdvOGtiR2dPbzB6K05JZFRhb0JjWTNyZ2pDQ0RHdEI4RFMzekFoL2h4MTNiN289">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKvcheu6oQa_T3hCtW2KS3U749SqROvQlAFAxaVMdpGEE10lNLKFv7-D1_9ZK30Kn1VlLvin3p879M7c3OPc-AyJWhJGXqxzeJO_wGyP-tSAb69fV4ruLHgpBO3ZUjbkhVj0RX1CzdsMnYeLhe_aFFhKVcPhf1CNqaRvK3eET6f_VOKVEkitrtddqyyO1Xxa2fa7o4gQIYtbk18Mnl0NlfazLuC_-2S0ndnyfSfWO91n2-gQStnK9GgN1uc5HYgVG-6tI1oot94lm3BYyzuJuLokyH4fi0Wl932BVA?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<Point>
+			<coordinates>-90.32426204216259,-0.7377824365538129,35.76724923628022</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="03067B3CCE3A4AC4FCA9">
+		<name>¡Disfruta tu estadía! 🌴 / Enjoy your stay! 🌴 / Genießen Sie Ihren Aufenthalt! 🌴</name>
+		<description><![CDATA[<h3><b>Español</b><br></h3><p><b>Consejos para tu visita 🌱</b><br></p><ul><li><p>Separa y deposita tus desechos en los contenedores de reciclaje.<br></p></li><li><p>Admira la fauna silvestre 🐢 sin acercarte, tocar ni alimentar a los animales.<br></p></li><li><p>Recuerda que para ingresar a cualquier sitio turístico debes ir acompañado de un guía naturalista autorizado a través de un operador turístico.<br></p></li></ul><div><br></div><h3><b>English</b><br></h3><p><b>Visitor Guidelines 🌱</b><br></p><ul><li><p>Please separate your waste and use the recycling bins.<br></p></li><li><p>Enjoy the wildlife 🐢 without approaching, touching, or feeding the animals.<br></p></li><li><p>Remember that access to any visitor site requires a licensed naturalist guide through an official tour operator.<br></p></li></ul><div><br></div><h3><b>Deutsch</b><br></h3><p><b>Hinweise für Besucher 🌱</b><br></p><ul><li><p>Bitte trennen Sie Ihren Abfall und nutzen Sie die Recycling-Behälter.<br></p></li><li><p>Beobachten Sie die Tierwelt 🐢, ohne sich zu nähern, sie zu berühren oder zu füttern.<br></p></li><li><p>Denken Sie daran, dass der Zugang zu touristischen Orten nur mit einem autorisierten Naturführer über einen offiziellen Reiseveranstalter möglich ist.<br></p></li></ul>]]></description>
+		<LookAt>
+			<longitude>-90.31704148627317</longitude>
+			<latitude>-0.7466228971769362</latitude>
+			<altitude>11.51455872539676</altitude>
+			<heading>2.553684636722326</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>7942.366245633457</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0B72843F583A4ACC91C6</styleUrl>
+		<gx:Carousel>
+			<gx:Image kml:id="hosted_image_QURiREJLdVQrcVAwbU5ydE9VRXBUUDhaTUhlcmNMRUxmUGtRZWdOZ3BtQ24veWtwVGlDUTZoSVRCbkFXWXB0Yk1tbkdLd3ZFL1NZWDZhNEp0NC9BQUFDNzY1OWZxNk9IbE1RWHY4Yis2eGVPR1pRZDJPWkxId2tDNHJZb1FqUWV5aEtuOGdIN0wzSmRsOHBHZExBczBGNXo3MEVZN25xY05qYjVrcGI5YVVnTlFKZkVZN212blhvdUFpYzdIR0JUT0EwajRQQU1WQ3Jyb2Q4NlEvS213ZDZVVXFDWDlsOUxlUTZ6R2wwMEZ1cGxpYUUyK3FxZWwzb0hoMi92YmRpZXJhOU8rM3c9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuazjlsd8PUu1_9A0h6iJoqLWdZLwU8CMoS0kXsm4N6fyyXwOyG36TtiEpD0Afr0U0OfOLJbhLicWKWe8ArF2d1EQDCaFI_PuV-O5SEOFSaB8q4AbQYqXdqrXxX_q-FE93-bBd-Wc167rZM84fXVXx1mk-cDOP2wU1BagTqVPHO3qBTHIg8Ms30Ta5Kdv-aUKQmBRZGYhEAcLajrNoxCQz_7PvMwIaeokz85R8JVpgSsan2kp63ws5AmgphIGr0uCThslsx2gqMjMXf2MEwSFQK9FruwNl1TQeyZw?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+			<gx:Image kml:id="hosted_image_QURiREJLdDV5cmMvYkZVVVE0cWsyTnozb1I0emkwY3MrdTR6RmNaMmtFaEVXU2tkUi9xYnV2UnJVMGRlaWs4d3ZkNXF3N2tveEFKNVI1K0JsZjhnWmw2Nmt3UGtnYlVJQ05QeXhjdmo1TUhNMHNKUzZNUEJhWkVkN1RSNTNIQVJqWlM3Uk4yQUIrRUxZeDl2RnZNdStQeXEvUEJNUW5NYmMrYjNWb3FWbzJ2UnRBQ0hiTGxDcDFFQzNFcXRBQVI0YjJkVnBEMkphclJsMXd6YVdkaFhSWnhZaVNaQ0lPVngreG9aNEUvU1FzUm1tbVN5QzhsRksrdUZnS0VuNjgybmJHZXMwSXc9_0">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKuA8qbTA3hd5e1A-54VIRloFUlGr49N6_veXnmM7HMw6BxCls1XQ_PDdFTd99YBnbjJ-dVsCVo8ucl0WSIcqNP9oXXNClDE9WV1v8FWhCbUpdgz7qqu1PBqjvdVjFPz_vQadjPvN4cK6T9T7JUE6EqCkJSTRpDK5FwYJXPnImpFy3HLkG_x3xkVpzElMQ3foXxcW6Am-psazGjEPhVDthV_KJFrkKT1YFEfr7wz-vcEzC45r4xLLoQQGiuHn4L1fnuHUc2bwfePxoIMO4sD1OpZBBTpqbaYJKU?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+			<gx:Image kml:id="hosted_image_QURiREJLc1lvK1N1blZTS3BReHNLVU1QMEp1SHI0MHd1RDZBeEM0bzhhekFmZFF2TkVMZ2QzM1E3M2pJbWRjbDJDc05hMWpoNERiTnlNMUEvRCtRM081M3hqNTg3QUJhNzdwS2gzWjYyejBDVVhxQU83Q0lTdTF5TUFiU0FiS3pxOUFUNHpwUXBZQ1BTMWxiWnFlekpHeTkvME80Sm1qc1dQN1lGQytjZzRVSFFtNnRFcy8rWWxmUWR6eG1pQnR1UU4veWRaOEhVVWVqcHJYL2pWV1dvcWdxTmZDK2dIZGRHTjZ4L0Q0QjdrM1FZVlN5TW9uV2t1WWxNZHlISFFhakR0ZHFNQlU9">
+				<gx:imageUrl>https://earth.usercontent.google.com/hostedimage/e/*/4ADbDBKvjf9xoJDBhkglaoVa1f09v2jgVRB05-5Q5FAKhgF01p72NPxvORaIG_2fw9kcMKtm5aJ_jJwcy-FA9OOiNCMgN0w0HLaeDpVYufezhCCciKjPpHJpVzEUwoexQ_ncpx_EVIKXqRU-IjXRcuk3GjJekdYZShgADU_h3wby3qrQ7iLmI0UYC20XPGsG0Xu-_b0t-TM8n2X_2IAXRNFEUP_KhOkFgWcal7bnq0fZHvtHZ2LDtGVUL7CL3aBLghJwozGdM1byriGFXOfNGQptpbJo3vEASTPGKA04elw?authuser=0&amp;fife=s{size}</gx:imageUrl>
+			</gx:Image>
+		</gx:Carousel>
+		<Point>
+			<coordinates>-90.31642040690788,-0.7415594832318299,17.47347543044683</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
