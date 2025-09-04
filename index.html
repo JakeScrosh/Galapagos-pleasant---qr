@@ -352,66 +352,34 @@ html[data-theme="dark"] #ambient-volume{
   const volEl = document.getElementById('ambient-volume');
   if(!audio || !btn || !volEl) return;
 
-  // API para que setLang actualice el texto del botón
-  window.updateAmbientLang = function(lang){
-    const mode = btn.classList.contains('playing') ? 'on' : 'off';
-    setStateLabel(mode, lang);
-  };
+  // ===== Estado & utilidades =====
+  let playing = false;
+  let fadeId  = null; // para cancelar fades en curso
 
-  // Estado inicial
-  const savedVol = parseFloat(localStorage.getItem('ambientVol') || '0.18');
-  const savedOn  = localStorage.getItem('ambientOn'); // '1'|'0'|null
-  volEl.value = isFinite(savedVol) ? savedVol : 0.18;
-  audio.volume = 0.0; // para fade-in
-  setVolTrack();
+  function clamp(x,a,b){ return Math.max(a, Math.min(b, x)); }
+  function stopFade(){ if (fadeId){ cancelAnimationFrame(fadeId); fadeId = null; } }
 
-  // Autoplay silencioso (permitido); si el user lo dejó activo, arrancamos con sonido
-  document.addEventListener('DOMContentLoaded', async () => {
-    try { await audio.play(); } catch(_) {}
-    if(savedOn === '1'){ enableSound(true); }
-    // Sin esto, al cargar muestra el texto correcto segun idioma guardado
-    window.updateAmbientLang?.(localStorage.getItem('lang') || 'es');
-  });
-
-  // Toggle
-  btn.addEventListener('click', () => {
-    if(btn.classList.contains('playing')){ disableSound(); }
-    else { enableSound(); }
-  });
-
-  // Volumen
-  volEl.addEventListener('input', () => {
-    const v = clamp(parseFloat(volEl.value), 0, 1);
-    localStorage.setItem('ambientVol', String(v));
-    setVolTrack();
-    if(btn.classList.contains('playing')) audio.volume = v;
-  });
-
-  // Primer gesto global: si el user no lo había desactivado, activamos
-  const opts = { once:true, passive:true };
-  function firstGesture(){ if(savedOn !== '0') enableSound(); }
-  window.addEventListener('click', firstGesture, opts);
-  window.addEventListener('keydown', firstGesture, opts);
-  window.addEventListener('touchstart', firstGesture, opts);
-
-  function enableSound(skipFade=false){
-    audio.muted = false;
-    audio.play().catch(()=>{});
-    const target = clamp(parseFloat(volEl.value), 0, 1);
-    if(skipFade){ audio.volume = target; } else { fadeTo(target, 900); }
-    btn.classList.add('playing');
-    btn.setAttribute('aria-pressed','true');
-    setStateLabel('on');
-    localStorage.setItem('ambientOn','1');
+  function fadeTo(target, ms, done){
+    stopFade();
+    const start = performance.now();
+    const from  = audio.volume;
+    const to    = clamp(target,0,1);
+    function step(t){
+      const p = Math.min(1, (t - start) / ms);
+      audio.volume = from + (to - from) * p;
+      if (p < 1) {
+        fadeId = requestAnimationFrame(step);
+      } else {
+        fadeId = null;
+        done && done();
+      }
+    }
+    fadeId = requestAnimationFrame(step);
   }
 
-  function disableSound(){
-    fadeTo(0.0, 300, () => { audio.pause(); });
-    audio.muted = true;
-    btn.classList.remove('playing');
-    btn.setAttribute('aria-pressed','false');
-    setStateLabel('off');
-    localStorage.setItem('ambientOn','0');
+  function setVolTrack(){
+    const pct = Math.round(clamp(parseFloat(volEl.value)||0,0,1) * 100);
+    volEl.style.setProperty('--vol', pct + '%');
   }
 
   function setStateLabel(mode, lang){
@@ -420,28 +388,94 @@ html[data-theme="dark"] #ambient-volume{
       off: { es:'Activar', en:'Enable',  de:'Aktivieren' }
     };
     const l = lang || localStorage.getItem('lang') || 'es';
-    const text = (map[mode] && map[mode][l]) || (mode==='on'?'Detener':'Activar');
     const el = btn.querySelector('.state span[data-lang="'+l+'"]') || btn.querySelector('.state span');
-    if(el){ el.textContent = text; }
+    if(el){ el.textContent = (map[mode] && map[mode][l]) || (mode==='on'?'Detener':'Activar'); }
   }
 
-  function fadeTo(target, ms, done){
-    const start = performance.now();
-    const from = audio.volume;
-    const to   = clamp(target,0,1);
-    function step(t){
-      const p = Math.min(1, (t-start)/ms);
-      audio.volume = from + (to-from)*p;
-      if (p<1) requestAnimationFrame(step); else done && done();
+  // Lo usa setLang(...) para refrescar el texto según idioma
+  window.updateAmbientLang = (lang) => setStateLabel(playing ? 'on' : 'off', lang);
+
+  // ===== Estado inicial =====
+  const savedVol = parseFloat(localStorage.getItem('ambientVol') || '0.18');
+  volEl.value = isFinite(savedVol) ? savedVol : 0.18;
+  audio.volume = 0.0;               // arrancamos en 0 para hacer fade-in
+  setVolTrack();
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    try { await audio.play(); } catch(_) {} // autoplay silencioso
+    if (localStorage.getItem('ambientOn') === '1'){
+      enableSound(true); // si quedó activo la última vez, arranca sonando
+    } else {
+      setStateLabel('off');
     }
-    requestAnimationFrame(step);
+    // asegurar que el texto del botón coincida con el idioma guardado
+    window.updateAmbientLang?.(localStorage.getItem('lang') || 'es');
+  });
+
+  // ===== Interacciones =====
+  // Botón toggle
+  btn.addEventListener('click', () => {
+    if (playing) disableSound();
+    else enableSound();
+  });
+
+  // Volumen: NO reactiva si está desactivado
+  volEl.addEventListener('input', () => {
+    const v = clamp(parseFloat(volEl.value)||0, 0, 1);
+    localStorage.setItem('ambientVol', String(v));
+    setVolTrack();
+    if (playing) audio.volume = v;
+  });
+
+  // Primer gesto global: solo auto-activa si el usuario NO la apagó
+  const gesture = () => {
+    if (!playing && localStorage.getItem('ambientOn') !== '0'){
+      enableSound();
+    }
+    window.removeEventListener('click', gesture);
+    window.removeEventListener('keydown', gesture);
+    window.removeEventListener('touchstart', gesture);
+  };
+  window.addEventListener('click', gesture, {passive:true});
+  window.addEventListener('keydown', gesture, {passive:true});
+  window.addEventListener('touchstart', gesture, {passive:true});
+
+  // ===== Helpers de control =====
+  function enableSound(skipFade=false){
+    stopFade();
+
+    const target = clamp(parseFloat(volEl.value)||0.18, 0, 1);
+
+    // Dejar el audio en estado AUDIBLE antes de reproducir
+    audio.muted  = false;
+    audio.volume = skipFade ? target : Math.min(0.001, target); // >0 para que el fade arranque
+
+    // Marcar UI antes (para evitar estados raros si play() tarda)
+    btn.classList.add('playing');
+    btn.setAttribute('aria-pressed','true');
+    playing = true;
+    setStateLabel('on');
+    localStorage.setItem('ambientOn','1');
+
+    // Reproducir SIEMPRE al activar; luego hacemos fade si toca
+    audio.play().then(() => {
+      if (!skipFade) fadeTo(target, 700);
+    }).catch(() => {
+      // si por alguna razón falla, mantenemos el estado y el usuario puede reintentar
+    });
   }
 
-  function clamp(x,a,b){ return Math.max(a, Math.min(b, x)); }
+  function disableSound(){
+    stopFade();
+    // Baja a cero y pausa; queda desactivado hasta que el botón lo reactive
+    fadeTo(0.0, 250, () => { try{ audio.pause(); }catch(e){} });
+    audio.muted = true;
 
-  function setVolTrack(){
-    const pct = Math.round(clamp(parseFloat(volEl.value),0,1)*100);
-    volEl.style.setProperty('--vol', pct + '%');
+    btn.classList.remove('playing');
+    btn.setAttribute('aria-pressed','false');
+    playing = false;
+    setStateLabel('off');
+    localStorage.setItem('ambientOn','0');
   }
 })();
 </script>
