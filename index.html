@@ -99,7 +99,13 @@
 </div>
     
  <div class="section">
-  <h2>🗺️ Mapa 2D (Google My Maps)</h2>
+
+   
+   <h2>
+  <span data-lang="es">🗺️ Mapa 2D</span>
+  <span data-lang="en" style="display:none">🗺️ 2D Map</span>
+  <span data-lang="de" style="display:none">🗺️ 2D-Karte</span>
+</h2>
   <iframe
     src="https://www.google.com/maps/d/embed?mid=11Q2N6ybnaNk9ll-GL_IthtDPxddkqcY&ehbc=2E312F&noprof=1"
     loading="lazy"
@@ -117,7 +123,13 @@
 </div>
 
     <div class="section">
-      <h2>🎶 Música Ambiental / Ambient Music</h2>
+
+      
+     <h2>
+  <span data-lang="es">🎶 Música ambiental</span>
+  <span data-lang="en" style="display:none">🎶 Ambient music</span>
+  <span data-lang="de" style="display:none">🎶 Ambient-Musik</span>
+</h2>
       <audio controls loop>
         <source src="Ambient music.mp3" type="audio/mpeg">
         Tu navegador no soporta audio HTML5.
@@ -139,19 +151,28 @@
   const de = document.getElementById('de');
 
   function setLang(lang) {
+    // Secciones de contenido
     const sections = { es, en, de };
     Object.entries(sections).forEach(([k, el]) => {
-      el.style.display = (k === lang) ? 'block' : 'none';
+      if (el) el.style.display = (k === lang) ? 'block' : 'none';
     });
-    esBtn.classList.toggle('active', lang === 'es');
-    enBtn.classList.toggle('active', lang === 'en');
-    deBtn.classList.toggle('active', lang === 'de');
+
+    // Botones activos
+    esBtn?.classList.toggle('active', lang === 'es');
+    enBtn?.classList.toggle('active', lang === 'en');
+    deBtn?.classList.toggle('active', lang === 'de');
+
+    // Textos con data-lang (títulos de secciones, etc.)
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = (el.dataset.lang === lang) ? 'inline' : 'none';
+    });
+
     try { localStorage.setItem('lang', lang); } catch(e) {}
   }
 
-  esBtn.addEventListener('click', () => setLang('es'));
-  enBtn.addEventListener('click', () => setLang('en'));
-  deBtn.addEventListener('click', () => setLang('de'));
+  esBtn?.addEventListener('click', () => setLang('es'));
+  enBtn?.addEventListener('click', () => setLang('en'));
+  deBtn?.addEventListener('click', () => setLang('de'));
 
   const saved = (typeof localStorage !== 'undefined' && localStorage.getItem('lang')) || 'es';
   setLang(saved);
