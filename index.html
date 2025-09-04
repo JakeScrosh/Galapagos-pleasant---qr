@@ -67,16 +67,23 @@
       </div>
     </div>
 
-    <div class="section">
-      <h2>🗺️ Mapa (KML) embebido / Embedded Map</h2>
-      <div id="map2d"></div>
-      <div class="legend">
-        <div class="item"><span class="pin pin-plane">🛫</span> Aeropuerto / Airport</div>
-        <div class="item"><span class="pin pin-ferry">⛴️</span> Ferry / Canal</div>
-        <div class="item"><span class="pin pin-bus">🚌</span> Terminal / Bus</div>
-        <div class="item"><span class="pin pin-star">★</span> Centro / Puerto Ayora</div>
-      </div>
-    </div>
+ <div class="section">
+  <h2>🗺️ Mapa 2D (Google My Maps)</h2>
+  <iframe
+    src="https://www.google.com/maps/d/embed?mid=11Q2N6ybnaNk9ll-GL_IthtDPxddkqcY&ehbc=2E312F&noprof=1"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    style="width:100%;height:520px;border:0;border-radius:10px;">
+  </iframe>
+
+  <div class="legend">
+    <div class="item"><span class="pin pin-plane">🛫</span> Aeropuerto / Airport</div>
+    <div class="item"><span class="pin pin-ferry">⛴️</span> Ferry / Canal</div>
+    <div class="item"><span class="pin pin-bus">🚌</span> Terminal / Bus</div>
+    <div class="item"><span class="pin pin-star">★</span> Centro / Puerto Ayora</div>
+  </div>
+</div>
 
     <div class="section">
       <h2>🎶 Música Ambiental / Ambient Music</h2>
@@ -91,75 +98,29 @@
     </footer>
   </div>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7kGPrPj0vZQpG3xci2CkVUoM8C+1G6H0w0CwYQ=" crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
-  <script src="https://unpkg.com/esri-leaflet@3.0.11/dist/esri-leaflet.js"></script>
   <script>
-    // Idioma
-    const esBtn=document.getElementById('btn-es');
-    const enBtn=document.getElementById('btn-en');
-    const es=document.getElementById('es');
-    const en=document.getElementById('en');
-    esBtn.addEventListener('click',()=>{
-      es.style.display='block'; en.style.display='none';
-      esBtn.classList.add('active'); enBtn.classList.remove('active');
-    });
-    enBtn.addEventListener('click',()=>{
-      es.style.display='none'; en.style.display='block';
-      enBtn.classList.add('active'); esBtn.classList.remove('active');
-    });
+  // Toggle de idioma ES/EN
+  const esBtn = document.getElementById('btn-es');
+  const enBtn = document.getElementById('btn-en');
+  const es    = document.getElementById('es');
+  const en    = document.getElementById('en');
 
-    // Leaflet + KML
-    const map = L.map('map2d', { zoomControl: true });
-    const imagery = L.esri.basemapLayer('Imagery'); imagery.addTo(map);
-
-    // Custom emoji divIcons
-    function divIcon(cls, emoji) {
-      return L.divIcon({
-        className: '',
-        html: `<div class="pin ${cls}">${emoji}</div>`,
-        iconSize: [28,28],
-        iconAnchor: [14,14],
-        popupAnchor: [0,-12]
-      });
+  function setLang(lang) {
+    if (lang === 'es') {
+      es.style.display = 'block';
+      en.style.display = 'none';
+      esBtn.classList.add('active');
+      enBtn.classList.remove('active');
+    } else {
+      es.style.display = 'none';
+      en.style.display = 'block';
+      enBtn.classList.add('active');
+      esBtn.classList.remove('active');
     }
-    const icons = {
-      plane: divIcon('pin-plane','🛫'),
-      ferry: divIcon('pin-ferry','⛴️'),
-      bus:   divIcon('pin-bus','🚌'),
-      star:  divIcon('pin-star','★')
-    };
+  }
 
-    const kmlLayer = omnivore.kml('mapa.kml')
-      .on('ready', function() {
-        try { map.fitBounds(kmlLayer.getBounds(), { padding: [20,20] }); }
-        catch(e) { map.setView([ -0.739, -90.3 ], 10); }
-
-        // Asignar íconos por nombre del marcador
-        kmlLayer.eachLayer(function(layer) {
-          if (layer && layer.feature && layer.feature.properties) {
-            const name = (layer.feature.properties.name || '').toLowerCase();
-            if (layer.getLatLng && name) {
-              let icon = null;
-              if (name.includes('aeropuerto') || name.includes('airport') || name.includes('seymour') || name.includes('baltra')) icon = icons.plane;
-              else if (name.includes('ferry') || name.includes('itabaca') || name.includes('canal')) icon = icons.ferry;
-              else if (name.includes('terminal') || name.includes('bus') || name.includes('mirador')) icon = icons.bus;
-              else if (name.includes('puerto ayora') || name.includes('centro') || name.includes('downtown')) icon = icons.star;
-              if (icon && layer.setIcon) layer.setIcon(icon);
-            }
-            // Popup con nombre/desc
-            if (layer.bindPopup) {
-              const desc = layer.feature.properties.description || '';
-              const title = layer.feature.properties.name || 'Lugar';
-              layer.bindPopup(`<strong>${title}</strong><br>${desc}`);
-            }
-          }
-        });
-      })
-      .on('error', function() {
-        map.setView([ -0.739, -90.3 ], 10);
-      })
-      .addTo(map);
-  </script>
+  esBtn.addEventListener('click', () => setLang('es'));
+  enBtn.addEventListener('click', () => setLang('en'));
+</script>
 </body>
 </html>
