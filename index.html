@@ -89,7 +89,11 @@
 <body>
   <div class="wrap">
     <header>
-      <h1>🗺️ Galápagos • Instructivo / Guide</h1>
+     <h1>
+  <span data-lang="es">🦎 Galápagos • Instructivo</span>
+  <span data-lang="en" style="display:none">🦎 Galápagos • Visitor Guide</span>
+  <span data-lang="de" style="display:none">🦎 Galápagos • Besucherleitfaden</span>
+</h1>
       <div class="lang">
         <button id="btn-es" class="active">ES 🇪🇸</button>
         <button id="btn-en">EN 🇬🇧</button>
@@ -197,16 +201,31 @@
   const en = document.getElementById('en');
   const de = document.getElementById('de');
 
+  // Títulos por idioma para la pestaña del navegador
+  const pageTitles = {
+    es: 'Galápagos • Instructivo',
+    en: 'Galápagos • Visitor Guide',
+    de: 'Galápagos • Besucherleitfaden'
+  };
+
   function setLang(lang) {
+    // Secciones
     const sections = { es, en, de };
     Object.entries(sections).forEach(([k, el]) => el && (el.style.display = (k === lang) ? 'block' : 'none'));
+
+    // Botones activos
     esBtn?.classList.toggle('active', lang === 'es');
     enBtn?.classList.toggle('active', lang === 'en');
     deBtn?.classList.toggle('active', lang === 'de');
-    // Spans con data-lang (para títulos de secciones)
+
+    // Todos los textos con data-lang (h1 y títulos de secciones)
     document.querySelectorAll('[data-lang]').forEach(el => {
       el.style.display = (el.dataset.lang === lang) ? 'inline' : 'none';
     });
+
+    // Título de la pestaña (browser tab)
+    document.title = pageTitles[lang] || pageTitles.es;
+
     try { localStorage.setItem('lang', lang); } catch(e) {}
   }
 
@@ -231,7 +250,6 @@
     try { localStorage.setItem('theme', theme); } catch(e) {}
   }
 
-  // Preferencia guardada o preferencia del sistema
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const initialTheme = (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) || (prefersDark ? 'dark' : 'light');
   setTheme(initialTheme);
@@ -241,12 +259,11 @@
     setTheme(current === 'dark' ? 'light' : 'dark');
   });
 
-  // Si el usuario cambia el tema del SO en vivo
   try {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
       if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light');
     });
-  } catch(e) { /* Safari antiguos */ }
+  } catch(e) {}
 </script>
 </body>
 </html>
