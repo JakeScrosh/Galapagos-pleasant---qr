@@ -48,6 +48,7 @@
       <div class="lang">
         <button id="btn-es" class="active">ES 🇪🇸</button>
         <button id="btn-en">EN 🇬🇧</button>
+        <button id="btn-de">DE 🇩🇪</button>
       </div>
     </header>
 
@@ -78,7 +79,25 @@
         <a href="https://earth.google.com/earth/d/1XmWnWw7mKk_bTjB9ppa90vUA_28ilYze?usp=sharing" target="_blank" rel="noopener">🌍 3D View (Google Earth)</a>
       </div>
     </div>
-
+    
+  <div id="de" class="section" style="display:none">
+  <h2>Willkommen 🤝</h2>
+  <p>Sie sind am Seymour Eco-Flughafen auf der Insel Baltra angekommen. Hier beginnt Ihre Reise nach Puerto Ayora:</p>
+  <ol>
+    <li>🚌 Flughafenbus → Itabaca-Kanal (10–15 Min.).</li>
+    <li>⛴️ Fähre → Pier von Santa Cruz (Itabaca).</li>
+    <li>🚕/🚌 Taxi oder Bus nach Puerto Ayora (der Bus hält am Terminal El Mirador; von dort Taxi zum Hotel).</li>
+  </ol>
+  <div class="cta">
+    <a href="Folleto ecológico natural verde Aleman.pdf" download>
+      📄 Anleitung auf Deutsch herunterladen
+    </a>
+    <a href="https://earth.google.com/earth/d/1XmWnWw7mKk_bTjB9ppa90vUA_28ilYze?usp=sharing" target="_blank" rel="noopener">
+      🌍 3D-Ansicht (Google Earth)
+    </a>
+  </div>
+</div>
+    
  <div class="section">
   <h2>🗺️ Mapa 2D (Google My Maps)</h2>
   <iframe
@@ -111,28 +130,31 @@
   </div>
 
   <script>
-  // Toggle de idioma ES/EN
   const esBtn = document.getElementById('btn-es');
   const enBtn = document.getElementById('btn-en');
-  const es    = document.getElementById('es');
-  const en    = document.getElementById('en');
+  const deBtn = document.getElementById('btn-de');
+
+  const es = document.getElementById('es');
+  const en = document.getElementById('en');
+  const de = document.getElementById('de');
 
   function setLang(lang) {
-    if (lang === 'es') {
-      es.style.display = 'block';
-      en.style.display = 'none';
-      esBtn.classList.add('active');
-      enBtn.classList.remove('active');
-    } else {
-      es.style.display = 'none';
-      en.style.display = 'block';
-      enBtn.classList.add('active');
-      esBtn.classList.remove('active');
-    }
+    const sections = { es, en, de };
+    Object.entries(sections).forEach(([k, el]) => {
+      el.style.display = (k === lang) ? 'block' : 'none';
+    });
+    esBtn.classList.toggle('active', lang === 'es');
+    enBtn.classList.toggle('active', lang === 'en');
+    deBtn.classList.toggle('active', lang === 'de');
+    try { localStorage.setItem('lang', lang); } catch(e) {}
   }
 
   esBtn.addEventListener('click', () => setLang('es'));
   enBtn.addEventListener('click', () => setLang('en'));
+  deBtn.addEventListener('click', () => setLang('de'));
+
+  const saved = (typeof localStorage !== 'undefined' && localStorage.getItem('lang')) || 'es';
+  setLang(saved);
 </script>
 </body>
 </html>
