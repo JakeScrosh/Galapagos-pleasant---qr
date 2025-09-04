@@ -3,10 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Galápagos • Instructivo / Guide</title>
   <meta name="description" content="Instrucciones de llegada y mapa • Arrival instructions & map" />
-  <link rel="preconnect" href="https://unpkg.com">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-o9N1j7kGPrPj0vZQpG3xci2CkVUoM8C+1G6H0w0CwYQ=" crossorigin=""/>
+
+  <!-- Iconos / apariencia pro -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#28a58a">
+
+  <!-- Vista previa al compartir (WhatsApp, Facebook, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galápagos • Instructivo / Guide (ES/EN)">
+  <meta property="og:description" content="Mapa 2D (My Maps) + Vista 3D (Google Earth), instructivo en ES/EN y música ambiental.">
+  <meta property="og:image" content="/cover.jpg">
+  <meta property="og:url" content="https://visitor-guidelines-baltra.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <style>
     body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f8f7;color:#222;}
     .wrap{max-width:1000px;margin:0 auto;padding:20px}
@@ -15,7 +28,6 @@
     .lang button{cursor:pointer;margin:0 4px;padding:6px 12px;border:none;border-radius:8px;background:#28a58a;color:#fff;font-weight:bold}
     .lang button.active{background:#166c5b}
     .section{margin-top:20px;padding:15px;background:#fff;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-    #map2d{width:100%;height:520px;border-radius:10px}
     .cta{margin-top:10px}
     .cta a{display:inline-block;margin:6px 10px 0 0;padding:8px 12px;background:#28a58a;color:#fff;text-decoration:none;border-radius:6px}
     .cta a:hover{background:#166c5b}
